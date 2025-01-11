@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #ffffff;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  .slides {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+    img {
+      position: absolute;
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      opacity: 0;
+      z-index: 9999;
+
+      &.active {
+        opacity: 1;
+      }
+    
+  }
+
+  .overlays {
+    position: relative;
+
+   
+    width: 30em;
+    height: 25em;
+
+    .bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 15px;
+      width: 100%;
+      height: 100%;
+      background: var(--bar-color);
+      transform-origin: left;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    width: 90%;
+ 
+    list-style-type: none;
+
+    .nav-link {
+      font-size: 2rem;
+      font-family: Lora, serif;
+      line-height: 2;
+      text-decoration: none;
+      color: #F4DFC8;
+      transition: 0.3s;
+
+      &:hover {
+        color: #1c1e1f;
+      }
+
+      &.active {
+        color: black;
+        pointer-events: none;
+      }
+    }
+  }
+}
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.nav {
+    list-style-type: none;
+    margin-top: 15px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #B1F0F7;
+  }
+  
+  .nav-items {
+    float: left;
+  }
+  
+  .nav-items a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav-items a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #95d5dc;
+    padding: 10px;
+    border-radius: 10px;
+  }
