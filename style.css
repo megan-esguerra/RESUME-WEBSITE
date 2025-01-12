@@ -52,6 +52,7 @@ body {
       align-items: center;
       width: 100%;
       height: 100%;
+      box-shadow: #b6b7b8 0px 0px 7px;
       background: var(--bar-color);
       transform-origin: left;
     }
