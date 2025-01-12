@@ -23,6 +23,8 @@ body {
   }
     img {
       position: absolute;
+      margin-left: 15px;
+      margin-top: 30px;
       border-radius: 50%;
       width: 150px;
       height: 150px;
@@ -46,26 +48,24 @@ body {
       border-bottom-right-radius: 120px;
       border-top-left-radius: 120px;
       justify-content: center;
-      display: flex;
+      display: block;
       bottom: 0;
       overflow: hidden;
       align-items: center;
       width: 100%;
       height: 100%;
-      box-shadow: #b6b7b8 0px 0px 7px;
+      box-shadow: #b6b7b8 5px 5px 7px;
       background: var(--bar-color);
       transform-origin: left;
     }
-    .btnview{
-      height: 20px;
-      width: 80px;
-    }
+
   }
   hr {
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     width: 100%;
-    margin: 20px auto;
+    margin: 200px auto;
 }
+
 
   .nav-links {
     display: flex;
@@ -102,8 +102,10 @@ header{
     width: 100%;
     justify-content: center;
     display: flex;
+    z-index: 1;
 }
 .nav {
+  position: relative;
     list-style-type: none;
     margin-top: 15px;
     width: 90%;
@@ -138,11 +140,20 @@ header{
   }
 
   .container {
+    position: relative;
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 90px;
     padding: 20px;
   }
-  
+  .circlesss{
+    color: #111;
+    margin-left: 50%;
+  }
+  a{
+    text-decoration: none;
+    color: #111;
+  }
   .header {
     text-align: center;
     border-bottom: 1px dashed #444;
@@ -168,7 +179,7 @@ header{
   }
   
   .header p a {
-    color: #4CAF50;
+    color: #14a0aa;
     text-decoration: none;
   }
   
@@ -178,7 +189,14 @@ header{
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
-  
+  .skills {
+    text-align: center;
+    border-top: 1px dashed #444;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
   .about-content {
     display: flex;
     align-items: center;
@@ -187,7 +205,7 @@ header{
   }
   
   .avatar {
-    width: 250px;
+    width: 360px;
     height: 160px;
     border-radius: 50%;
     border: 5px solid rgb(0,237,255);
@@ -201,6 +219,7 @@ header{
   
   .projects {
     text-align: center;
+    padding-bottom: 20px;
   }
   /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
@@ -221,13 +240,13 @@ header{
 /* Animation */
 .typewriter-animation {
   animation: 
-    typewriter 6s steps(50) 1s infinite normal both, 
+    typewriter 5s steps(50) 1s infinite normal both, 
     blinkingCursor 500ms steps(50) infinite normal;
 }
 
 @keyframes typewriter {
   from { width: 0; }
-  to { width: 30%; }
+  to { width: 40%; }
 }
 
 @keyframes blinkingCursor {
@@ -242,7 +261,8 @@ header{
   background-color: #FCFCFD;
   border-radius: 4px;
   border-width: 0;
-  bottom: -20px;
+  margin-left: 240px;
+  bottom: 350px;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
   box-sizing: border-box;
   color: #36395A;
@@ -304,7 +324,7 @@ body {
   transform: translate(-50%, 0);
   bottom: 40%;
   min-width: calc(120px * 5 + 5 * (25px + 17.5px));
-  padding: 0 20px;
+  padding: 20px 20px;
 }
 
 .skill-wrapper .skill-progress {
@@ -338,7 +358,7 @@ body {
   content: '';
   display: block;
   clip: rect(0px, 60px, 120px, 0px);
-  background-color: #90b8f8; /* lighten(#355691, 20%) */
+  background-color: #abc9f8; /* lighten(#355691, 20%) */
 }
 
 .skill-wrapper .skill-progress .circle:before {
@@ -366,13 +386,43 @@ body {
   font-weight: 800;
   color: #455fae;
 }
+.inset::after {
+  content: ''; /* Updated per skill below */
+  font-size: 14px;
+  font-weight: 400;
+  color: #2e3d59; /* Adjust color as needed */
+  position: absolute;
+  width: 100%;
+  top: 95px; /* Position below the circle */
+  text-align: center;
+}
+.skill-progress:nth-child(1) .inset::after {
+  margin-left: -45px;
+  content: 'HTML5';
+}
+.skill-progress:nth-child(2) .inset::after {
+  margin-left: -45px;
+  content: 'React';
+}
+.skill-progress:nth-child(3) .inset::after {
+  margin-left: -45px;
+  content: 'TypeScript';
+}
+.skill-progress:nth-child(4) .inset::after {
+  margin-left: -45px;
+  content: 'PHP';
+}
+.skill-progress:nth-child(5) .inset::after {
+  margin-left: -45px;
+  content: 'Next.js';
+}
 
 .skill-wrapper .skill-progress:nth-child(1) .inset::before {
-  content: '85%';
+  content: '99%';
 }
 
 .skill-wrapper .skill-progress:nth-child(2) .inset::before {
-  content: '93%';
+  content: '95%';
 }
 
 .skill-wrapper .skill-progress:nth-child(3) .inset::before {
@@ -384,12 +434,12 @@ body {
 }
 
 .skill-wrapper .skill-progress:nth-child(5) .inset::before {
-  content: '43%';
+  content: '73%';
 }
 
 .skill-wrapper .skill-progress:nth-child(1) .circle .mask:before,
 .skill-wrapper .skill-progress:nth-child(1) .circle .mask:nth-child(2) {
-  transform: rotate(153deg); /* 85% of 180deg */
+  transform: rotate(175deg); /* 85% of 180deg */
 }
 
 .skill-wrapper .skill-progress:nth-child(2) .circle .mask:before,
@@ -409,5 +459,78 @@ body {
 
 .skill-wrapper .skill-progress:nth-child(5) .circle .mask:before,
 .skill-wrapper .skill-progress:nth-child(5) .circle .mask:nth-child(2) {
-  transform: rotate(77.4deg); /* 43% of 180deg */
+  transform: rotate(140.4deg); /* 43% of 180deg */
 }
+  /* kristel css start*/
+  .body-main {
+    font-family: Arial, sans-serif;
+    background-color: #eff5ed; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.header-h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #333;
+}
+.progress-container-main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 30px;
+}
+.circle-main {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    position: relative;
+    background: conic-gradient(var(--progress-color) var(--progress-percentage), #e0e0e0 0%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-main:hover {
+    transform: scale(1.1);
+}
+.circle-text-main {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+}
+.percentage-main {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+.label-main {
+    font-size: 12px; 
+    color: #555;
+    margin-top: 5px;
+}
+.js-skill-circle-main {
+    --progress-color: #6ec3ce;
+    --progress-percentage: 80%;
+}
+.react-native-skill-circle-main {
+    --progress-color: #5ab0bb;
+    --progress-percentage: 75%;
+}
+.php-skill-circle-main {
+    --progress-color: #3e8799;
+    --progress-percentage: 70%;
+}
+.java-skill-circle-main {
+    --progress-color: #318ba1;
+    --progress-percentage: 60%;
+}
+.python-skill-circle-main {
+    --progress-color: #14445a;
+    --progress-percentage: 50%;
+}
+ /* kristel css end*/
