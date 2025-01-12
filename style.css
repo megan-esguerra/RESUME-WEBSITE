@@ -23,6 +23,8 @@ body {
   }
     img {
       position: absolute;
+      margin-left: 15px;
+      margin-top: 30px;
       border-radius: 50%;
       width: 150px;
       height: 150px;
@@ -46,26 +48,24 @@ body {
       border-bottom-right-radius: 120px;
       border-top-left-radius: 120px;
       justify-content: center;
-      display: flex;
+      display: block;
       bottom: 0;
       overflow: hidden;
       align-items: center;
       width: 100%;
       height: 100%;
-      box-shadow: #b6b7b8 0px 0px 7px;
+      box-shadow: #b6b7b8 5px 5px 7px;
       background: var(--bar-color);
       transform-origin: left;
     }
-    .btnview{
-      height: 20px;
-      width: 80px;
-    }
+
   }
   hr {
     border: 5px solid #ffffff;
     width: 100%;
-    margin: 20px auto;
+    margin: 200px auto;
 }
+
 
   .nav-links {
     display: flex;
@@ -146,7 +146,14 @@ header{
     margin-top: 90px;
     padding: 20px;
   }
-  
+  .circlesss{
+    color: #111;
+    margin-left: 50%;
+  }
+  a{
+    text-decoration: none;
+    color: #111;
+  }
   .header {
     text-align: center;
     border-bottom: 1px dashed #444;
@@ -185,6 +192,7 @@ header{
   .skills {
     text-align: center;
     border-top: 1px dashed #444;
+    padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
@@ -197,7 +205,7 @@ header{
   }
   
   .avatar {
-    width: 250px;
+    width: 360px;
     height: 160px;
     border-radius: 50%;
     border: 5px solid rgb(0,237,255);
@@ -211,6 +219,7 @@ header{
   
   .projects {
     text-align: center;
+    padding-bottom: 20px;
   }
   /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
@@ -252,7 +261,8 @@ header{
   background-color: #FCFCFD;
   border-radius: 4px;
   border-width: 0;
-  bottom: -20px;
+  margin-left: 240px;
+  bottom: 350px;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
   box-sizing: border-box;
   color: #36395A;
@@ -348,7 +358,7 @@ body {
   content: '';
   display: block;
   clip: rect(0px, 60px, 120px, 0px);
-  background-color: #90b8f8; /* lighten(#355691, 20%) */
+  background-color: #abc9f8; /* lighten(#355691, 20%) */
 }
 
 .skill-wrapper .skill-progress .circle:before {
@@ -387,27 +397,32 @@ body {
   text-align: center;
 }
 .skill-progress:nth-child(1) .inset::after {
+  margin-left: -45px;
   content: 'HTML5';
 }
 .skill-progress:nth-child(2) .inset::after {
-  content: 'CSS';
+  margin-left: -45px;
+  content: 'React';
 }
 .skill-progress:nth-child(3) .inset::after {
-  content: 'JavaScript';
+  margin-left: -45px;
+  content: 'TypeScript';
 }
 .skill-progress:nth-child(4) .inset::after {
+  margin-left: -45px;
   content: 'PHP';
 }
 .skill-progress:nth-child(5) .inset::after {
-  content: 'SQL';
+  margin-left: -45px;
+  content: 'Next.js';
 }
 
 .skill-wrapper .skill-progress:nth-child(1) .inset::before {
-  content: '85%';
+  content: '99%';
 }
 
 .skill-wrapper .skill-progress:nth-child(2) .inset::before {
-  content: '93%';
+  content: '95%';
 }
 
 .skill-wrapper .skill-progress:nth-child(3) .inset::before {
@@ -419,12 +434,12 @@ body {
 }
 
 .skill-wrapper .skill-progress:nth-child(5) .inset::before {
-  content: '43%';
+  content: '73%';
 }
 
 .skill-wrapper .skill-progress:nth-child(1) .circle .mask:before,
 .skill-wrapper .skill-progress:nth-child(1) .circle .mask:nth-child(2) {
-  transform: rotate(153deg); /* 85% of 180deg */
+  transform: rotate(175deg); /* 85% of 180deg */
 }
 
 .skill-wrapper .skill-progress:nth-child(2) .circle .mask:before,
@@ -444,7 +459,7 @@ body {
 
 .skill-wrapper .skill-progress:nth-child(5) .circle .mask:before,
 .skill-wrapper .skill-progress:nth-child(5) .circle .mask:nth-child(2) {
-  transform: rotate(77.4deg); /* 43% of 180deg */
+  transform: rotate(140.4deg); /* 43% of 180deg */
 }
   /* kristel css start*/
   .body-main {
@@ -474,7 +489,7 @@ body {
     border-radius: 50%;
     position: relative;
     background: conic-gradient(var(--progress-color) var(--progress-percentage), #e0e0e0 0%);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(82, 81, 81, 0.422);
     transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: center;
