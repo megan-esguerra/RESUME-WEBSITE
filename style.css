@@ -179,7 +179,7 @@ header{
   }
   
   .header p a {
-    color: #4CAF50;
+    color: #14a0aa;
     text-decoration: none;
   }
   
@@ -489,7 +489,7 @@ body {
     border-radius: 50%;
     position: relative;
     background: conic-gradient(var(--progress-color) var(--progress-percentage), #e0e0e0 0%);
-    box-shadow: 0 10px 20px rgba(82, 81, 81, 0.422);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: center;
@@ -514,23 +514,23 @@ body {
     margin-top: 5px;
 }
 .js-skill-circle-main {
-    --progress-color: #86cc80;
+    --progress-color: #6ec3ce;
     --progress-percentage: 80%;
 }
 .react-native-skill-circle-main {
-    --progress-color: #6bc568;
+    --progress-color: #5ab0bb;
     --progress-percentage: 75%;
 }
 .php-skill-circle-main {
-    --progress-color: #55a172;
+    --progress-color: #3e8799;
     --progress-percentage: 70%;
 }
 .java-skill-circle-main {
-    --progress-color: #205f33;
+    --progress-color: #318ba1;
     --progress-percentage: 60%;
 }
 .python-skill-circle-main {
-    --progress-color: #1e573b;
+    --progress-color: #14445a;
     --progress-percentage: 50%;
 }
  /* kristel css end*/
