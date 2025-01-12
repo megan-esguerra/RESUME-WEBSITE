@@ -281,3 +281,133 @@ header{
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  min-width: 779px;
+  background: #eff5ed;
+  font-family: courier, serif;
+}
+
+.skill-wrapper {
+  position: relative;
+  top: initial;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 40%;
+  min-width: calc(120px * 5 + 5 * (25px + 17.5px));
+  padding: 0 20px;
+}
+
+.skill-wrapper .skill-progress {
+  display: inline-block;
+  background-color: rgba(141, 166, 179, 0.4);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 25px;
+  position: relative;
+}
+
+.skill-wrapper .skill-progress:last-child {
+  margin-right: 0;
+}
+
+.skill-wrapper .skill-progress .circle .mask {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
+  transition: transform 2s;
+  clip: rect(0px, 120px, 120px, 60px);
+}
+
+.skill-wrapper .skill-progress .circle .mask:before {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  clip: rect(0px, 60px, 120px, 0px);
+  background-color: #90b8f8; /* lighten(#355691, 20%) */
+}
+
+.skill-wrapper .skill-progress .circle:before {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-wrapper .skill-progress .inset {
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  margin-left: calc((120px - 85px) / 2);
+  margin-top: calc((120px - 85px) / 2);
+  background-color: #fbfbfb;
+  border-radius: 50%;
+  box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 85px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #455fae;
+}
+
+.skill-wrapper .skill-progress:nth-child(1) .inset::before {
+  content: '85%';
+}
+
+.skill-wrapper .skill-progress:nth-child(2) .inset::before {
+  content: '93%';
+}
+
+.skill-wrapper .skill-progress:nth-child(3) .inset::before {
+  content: '87%';
+}
+
+.skill-wrapper .skill-progress:nth-child(4) .inset::before {
+  content: '83%';
+}
+
+.skill-wrapper .skill-progress:nth-child(5) .inset::before {
+  content: '43%';
+}
+
+.skill-wrapper .skill-progress:nth-child(1) .circle .mask:before,
+.skill-wrapper .skill-progress:nth-child(1) .circle .mask:nth-child(2) {
+  transform: rotate(153deg); /* 85% of 180deg */
+}
+
+.skill-wrapper .skill-progress:nth-child(2) .circle .mask:before,
+.skill-wrapper .skill-progress:nth-child(2) .circle .mask:nth-child(2) {
+  transform: rotate(167.4deg); /* 93% of 180deg */
+}
+
+.skill-wrapper .skill-progress:nth-child(3) .circle .mask:before,
+.skill-wrapper .skill-progress:nth-child(3) .circle .mask:nth-child(2) {
+  transform: rotate(156.6deg); /* 87% of 180deg */
+}
+
+.skill-wrapper .skill-progress:nth-child(4) .circle .mask:before,
+.skill-wrapper .skill-progress:nth-child(4) .circle .mask:nth-child(2) {
+  transform: rotate(149.4deg); /* 83% of 180deg */
+}
+
+.skill-wrapper .skill-progress:nth-child(5) .circle .mask:before,
+.skill-wrapper .skill-progress:nth-child(5) .circle .mask:nth-child(2) {
+  transform: rotate(77.4deg); /* 43% of 180deg */
+}
