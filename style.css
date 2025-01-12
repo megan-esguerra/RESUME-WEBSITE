@@ -446,3 +446,76 @@ body {
 .skill-wrapper .skill-progress:nth-child(5) .circle .mask:nth-child(2) {
   transform: rotate(77.4deg); /* 43% of 180deg */
 }
+  /* kristel css start*/
+  .body-main {
+    font-family: Arial, sans-serif;
+    background-color: #eff5ed; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.header-h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #333;
+}
+.progress-container-main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 30px;
+}
+.circle-main {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    position: relative;
+    background: conic-gradient(var(--progress-color) var(--progress-percentage), #e0e0e0 0%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-main:hover {
+    transform: scale(1.1);
+}
+.circle-text-main {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+}
+.percentage-main {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+.label-main {
+    font-size: 12px; 
+    color: #555;
+    margin-top: 5px;
+}
+.js-skill-circle-main {
+    --progress-color: #86cc80;
+    --progress-percentage: 80%;
+}
+.react-native-skill-circle-main {
+    --progress-color: #6bc568;
+    --progress-percentage: 75%;
+}
+.php-skill-circle-main {
+    --progress-color: #55a172;
+    --progress-percentage: 70%;
+}
+.java-skill-circle-main {
+    --progress-color: #205f33;
+    --progress-percentage: 60%;
+}
+.python-skill-circle-main {
+    --progress-color: #1e573b;
+    --progress-percentage: 50%;
+}
+ /* kristel css end*/
