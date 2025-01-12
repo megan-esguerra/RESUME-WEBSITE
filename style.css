@@ -118,7 +118,7 @@ header{
   }
   
   .nav-items a:hover:not(.active) {
-    background-color: #111;
+    color: #111;
   }
   
   .active {
@@ -180,7 +180,7 @@ header{
     width: 250px;
     height: 160px;
     border-radius: 50%;
-    border: 5px solid #444;
+    border: 5px solid rgb(0,237,255);
   }
   
   .skill {
