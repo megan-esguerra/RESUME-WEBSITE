@@ -62,7 +62,7 @@ body {
     }
   }
   hr {
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     width: 100%;
     margin: 20px auto;
 }
@@ -102,8 +102,10 @@ header{
     width: 100%;
     justify-content: center;
     display: flex;
+    z-index: 1;
 }
 .nav {
+  position: relative;
     list-style-type: none;
     margin-top: 15px;
     width: 90%;
@@ -138,8 +140,10 @@ header{
   }
 
   .container {
+    position: relative;
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 90px;
     padding: 20px;
   }
   
@@ -178,7 +182,13 @@ header{
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
-  
+  .skills {
+    text-align: center;
+    border-top: 1px dashed #444;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
   .about-content {
     display: flex;
     align-items: center;
@@ -221,13 +231,13 @@ header{
 /* Animation */
 .typewriter-animation {
   animation: 
-    typewriter 6s steps(50) 1s infinite normal both, 
+    typewriter 5s steps(50) 1s infinite normal both, 
     blinkingCursor 500ms steps(50) infinite normal;
 }
 
 @keyframes typewriter {
   from { width: 0; }
-  to { width: 30%; }
+  to { width: 40%; }
 }
 
 @keyframes blinkingCursor {
@@ -304,7 +314,7 @@ body {
   transform: translate(-50%, 0);
   bottom: 40%;
   min-width: calc(120px * 5 + 5 * (25px + 17.5px));
-  padding: 0 20px;
+  padding: 20px 20px;
 }
 
 .skill-wrapper .skill-progress {
@@ -365,6 +375,31 @@ body {
   font-size: 22px;
   font-weight: 800;
   color: #455fae;
+}
+.inset::after {
+  content: ''; /* Updated per skill below */
+  font-size: 14px;
+  font-weight: 400;
+  color: #2e3d59; /* Adjust color as needed */
+  position: absolute;
+  width: 100%;
+  top: 95px; /* Position below the circle */
+  text-align: center;
+}
+.skill-progress:nth-child(1) .inset::after {
+  content: 'HTML5';
+}
+.skill-progress:nth-child(2) .inset::after {
+  content: 'CSS';
+}
+.skill-progress:nth-child(3) .inset::after {
+  content: 'JavaScript';
+}
+.skill-progress:nth-child(4) .inset::after {
+  content: 'PHP';
+}
+.skill-progress:nth-child(5) .inset::after {
+  content: 'SQL';
 }
 
 .skill-wrapper .skill-progress:nth-child(1) .inset::before {
