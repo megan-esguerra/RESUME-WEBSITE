@@ -1,4 +1,4 @@
-# **Resume Website Project**
+# **Resume Website Project** link: https://megan-esguerra.github.io/RESUME-WEBSITE/index.html
 
 This project is part of our **DevOps 2 activity**, aimed at demonstrating collaborative development using **GitHub** as our version control and collaboration platform. The goal is to create a fully functional **resume website** showcasing each team member's profile while following DevOps principles.
 
