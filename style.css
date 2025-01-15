@@ -112,7 +112,7 @@ header{
     padding: 10px;
     border-radius: 25px;
     overflow: hidden;
-    background: rgb(0,237,255);
+    background: rgb(30, 178, 189);
     box-shadow: #88898a 0px 0px 10px;
     background: linear-gradient(90deg, rgba(0,237,255,1) 36%, rgba(255,255,255,1) 73%);
   }
